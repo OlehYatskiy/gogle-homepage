@@ -3,6 +3,13 @@ body{
   min-height: 568px;
 }
 
+a,p,button,.locale {
+  font-size: 13px;
+  font-style: normal;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
 header{
   text-align: right;
   padding: 16px 30px;
@@ -10,10 +17,6 @@ header{
 
 header a,button {
   margin: 7px;
-  font-size: 13px;
-  font-style: normal;
-  font-family: sans-serif;
-  text-decoration: none;
   color: #4d1a00;
 }
 header img {
@@ -34,8 +37,6 @@ header button{
   font-weight: bold;
 }
 
-
-
 header a:hover{
   text-decoration: underline;
 }
@@ -54,16 +55,88 @@ header img:hover {
 header button:hover {
   box-shadow: 0 1px 1px 0 rgba(0,0,0,0.24);
   background-color: #0039e6;
-
 }
 
 form {
   position: relative;
   text-align: center;
-
+  margin-top: 100px;
 }
 
+form input {
+  width: 500px;
+  border: none;
+  outline: none;
+  font: auto;
+}
+
+form > a {
+  display: inline-block;
+  margin: 15px 7px;
+  padding: 13px;
+  background-color: #f2f2f2;
+  color: #666;
+  font-weight: bold;
+}
+
+form > a:hover {
+  box-shadow: 0 0 3px;
+  color: #111;
+}
+
+form p > a:hover {
+  text-decoration: underline;
+}
+
+form > a:focus {
+  outline: 1px solid #00cccc;
+}
+
+
 footer {
+  width: 100%;
   position: absolute;
   bottom:0;
+  background-color: #f2f2f2;
+}
+
+footer div {
+  height: 40px;
+  padding-left: 30px;
+  line-height: 40px;
+  color: #666;
+}
+
+
+footer a {
+  margin-right: 25px;
+  color: #666;
+}
+
+.left ~ a {
+  float: right;
+}
+
+.SearchField {
+  width: 600px;
+  height: 40px;
+  line-height: 40px;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border: 0.5px solid #DDD;
+  box-shadow: 0 2px 8px -4px;
+}
+
+.SearchField:hover {
+  box-shadow: 0 2px 8px -3px;
+}
+
+.locale {
+  border: 0.5px solid #DDD;
+  font-size: 14px;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
